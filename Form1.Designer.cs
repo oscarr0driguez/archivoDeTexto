@@ -34,6 +34,7 @@ namespace archivoDeTexto
             this.BtnLeer = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.BtnDirecto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtnGuardar
@@ -55,7 +56,7 @@ namespace archivoDeTexto
             // 
             // BtnLeer
             // 
-            this.BtnLeer.Location = new System.Drawing.Point(372, 215);
+            this.BtnLeer.Location = new System.Drawing.Point(288, 224);
             this.BtnLeer.Name = "BtnLeer";
             this.BtnLeer.Size = new System.Drawing.Size(75, 23);
             this.BtnLeer.TabIndex = 2;
@@ -75,11 +76,22 @@ namespace archivoDeTexto
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
+            // BtnDirecto
+            // 
+            this.BtnDirecto.Location = new System.Drawing.Point(402, 224);
+            this.BtnDirecto.Name = "BtnDirecto";
+            this.BtnDirecto.Size = new System.Drawing.Size(75, 23);
+            this.BtnDirecto.TabIndex = 4;
+            this.BtnDirecto.Text = "Leer Directo";
+            this.BtnDirecto.UseVisualStyleBackColor = true;
+            this.BtnDirecto.Click += new System.EventHandler(this.BtnDirecto_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnDirecto);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.BtnLeer);
             this.Controls.Add(this.textBox1);
@@ -98,6 +110,7 @@ namespace archivoDeTexto
         private System.Windows.Forms.Button BtnLeer;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button BtnDirecto;
     }
 }
 
